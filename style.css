@@ -1,13 +1,34 @@
 html {
-  background-color: #a8aab0;
+  background-color: #9DB5FF;
   /* font-family: 'Aclonica'; */
 }
 
+
+
+
+
+/* WHATS UP */
+.what-up {
+  background: #AB9DFF;
+  overflow: hidden;
+  border-radius: 8px;
+  padding-left: 20px;
+  margin-top: 10px;
+  /* border: 15px solid #AB9DFF; */
+  /* padding: 20px 10px; */
+}
+
+
+
+
+
+/* HEADER */
 .header {
-  background: #767676;
+  background: #D6B6FF;
   overflow: hidden;
   padding: 20px 10px;
   margin: 0px;
+  border-radius: 8px;
 }
 
 .header a {
@@ -27,19 +48,18 @@ html {
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: #FFB6E0;
   color: black;
 }
 
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #FAB6FF;
+  color: black;
 }
 
 .header-right {
   float: right;
 }
-
 
 
 
