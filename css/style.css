@@ -1,80 +1,110 @@
 html {
-  background-color: #9DB5FF;
-  /* font-family: 'Aclonica'; */
+  background-color: #D1E7FF;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-/* WHATS UP */
-.what-up {
-  background: #AB9DFF;
-  overflow: hidden;
-  border-radius: 8px;
-  padding-left: 20px;
-  margin-top: 10px;
-  /* border: 15px solid #AB9DFF; */
-  /* padding: 20px 10px; */
-}
-
-
-
 
 
 /* HEADER */
 .header {
-  background: #D6B6FF;
-  overflow: hidden;
-  padding: 20px 10px;
-  margin: 0px;
-  border-radius: 8px;
+  padding: 80px;
+  text-align: center;
+  background: #C0B8FF;
+  color: black;
+
+  /* position: absolute; */
+  /* left: 0;
+  top: 0;
+  width: 100%; */
 }
 
-.header a {
+.header-smaller {
+  padding: 15px;
+  text-align: center;
+  background: #C0B8FF;
+  color: black;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+/* NAV BAR */
+.navbar {
+  overflow: hidden;
+  background-color: #A39AFB;
+}
+
+.navbar a {
   float: left;
+  display: block;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
 }
 
-.header a.left-logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header a:hover {
-  background-color: #FFB6E0;
-  color: black;
-}
-
-.header a.active {
-  background-color: #FAB6FF;
-  color: black;
-}
-
-.header-right {
+.navbar a.right {
   float: right;
 }
 
+.navbar a:hover {
+  background-color: #5088FF;
+  color: white;
+}
 
 
+/* CONTENT SECTIONS */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #A4CAFE;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: #A4D3FE;
+  padding: 20px;
+}
+
+.real-main {
+  background-color: #A4D3FE;
+  padding: 20px;
+}
 
 
-/*Media responsiveness
-* When the screen is 500px wide or less, the links on right move to a top-down list
-*/
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #A4AEFE;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* MEDIA RESPONSIVENESS */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
   }
-  .header-right {
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
     float: none;
+    width: 100%;
   }
 }
